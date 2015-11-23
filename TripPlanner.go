@@ -113,11 +113,11 @@ type Responz struct {
 type TripResponse struct {
     ID                     string   `json:"id"`
     Status                 string   `json:"status"`
+    StartingFromLocationID string   `json:"starting_from_location_id"`
     BestRouteLocationIds   []string `json:"best_route_location_ids"`
-    TotalDistance          float64  `json:"total_distance"`
     TotalUberCosts         int      `json:"total_uber_costs"`
     TotalUberDuration      int      `json:"total_uber_duration"`
-    StartingFromLocationID string   `json:"starting_from_location_id"`
+    TotalDistance          float64  `json:"total_distance"`
 }
 type userUber struct {
     StartingFromLocationID string   `json:"starting_from_location_id"`
